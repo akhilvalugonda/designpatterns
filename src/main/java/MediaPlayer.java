@@ -1,3 +1,3 @@
 public interface MediaPlayer {
-    void play(String audioType, String fileName);
+    void playMusic(String audioType, String fileName);
 }
