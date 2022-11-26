@@ -1,4 +1,4 @@
 public interface AdvancedMediaPlayer {
-    void playVlcPlayer(String fileName);
-    void playMp4Player(String fileName);
+    public void playVlcPlayer(String fileName);
+    public void playMp4Player(String fileName);
 }
