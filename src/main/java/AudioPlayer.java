@@ -1,4 +1,6 @@
 public class AudioPlayer implements MusicPlayer {
+    
+    AdapterMusicadapter;
     @Override
     public void playMusic(String audioType, String fileName) {
         if(audioType.equalsIgnoreCase("mp3")) {
