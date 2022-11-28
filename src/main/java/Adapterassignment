@@ -1,0 +1,25 @@
+public class Adapterassignment implements MusicPlayer {
+
+   AdvancedMediaPlayer advancedMusic;
+
+   public Adapterassignment(String audioFile){
+   
+      if(audioFile.equalsIgnoreCase("vlcplayerfile") ){
+         advancedPlayer ap= new VlcPlayer();			
+         
+      }else if (audioFile.equalsIgnoreCase("mp4file")){
+         advancedPlayer ap= new Mp4Player();
+      }	
+   }
+
+   @Override
+   public void play(String File, String name) {
+   
+      if(File.equalsIgnoreCase("vlcplayerfile")){
+         advancedPlayer.playVlc(name);
+      }
+      else if(File.equalsIgnoreCase("mp4file")){
+         advancedPlayer.playMp4(name);
+      }
+   }
+}
