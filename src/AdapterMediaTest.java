@@ -4,14 +4,15 @@ import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
 @RunWith(JUnit4.class)
-public class TestAdapterMedia {
+public class AdapterMediaTest {
+
     @Test
     public void test_playMusic() {
-        AdapterMedia mediaAdapter = new AdapterMedia();
-        String fileName = "ashok.mp3";
-        String audioType = "mp3";
+        AdapterMedia adapterMedia = new AdapterMedia();
+        String audioType = "mp4";
+        String fileName = "song1.mp4";
 
-        String output = AdapterMedia.playMusic(fileName, audioType);
-        Assert.assertEquals("Playing mp3 file: " + fileName, output);
+        String output = adapterMedia.playMusic(audioType, fileName);
+        Assert.assertEquals("Playing mp4 file" + fileName, output);
     }
-}
+    }
